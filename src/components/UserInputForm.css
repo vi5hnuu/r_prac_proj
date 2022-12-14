@@ -1,0 +1,64 @@
+.input_form {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background-color: #ff8e9e;
+  gap: 1rem;
+  margin: auto;
+  width: 65rem;
+  max-width: 90%;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.input_control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+.lblUsr,
+.lblAge {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+.usernameText,
+.ageText {
+  border: none;
+  border-bottom: 3px solid #ff8e9e;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+
+  width: 100%;
+}
+.usernameText:focus,
+.ageText:focus {
+  outline: none;
+  border-bottom: 3px solid #f9244e;
+}
+.input_actions {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.btnAddUser {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  background-color: #f9b5d0;
+  transition: background-color 1s;
+}
+.btnAddUser:hover {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: #f9244e;
+}
+@media (max-width: 518px) {
+  .btnAddUser {
+    padding: 0.5rem 0.7rem;
+    letter-spacing: 0.05rem;
+  }
+}
